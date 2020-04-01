@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# mysql
+spring:
+  profiles:
+    active: dev
+  freemarker:
+    suffix: .html
+    request-context-attribute: request
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/a_log?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    username: root
+    password: root
+mybatis:
+  type-aliases-package: com.obroom.smartjump.module1.entity
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    root: info
+    com.obroom.smartjump: debug
