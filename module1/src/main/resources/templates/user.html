@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>账户信息表</title>
+    <#include "/base.html"/>
+    <link rel="stylesheet" href="${request.contextPath}/static/css/index.css" type="text/css">
+</head>
+<body>
+<div>
+    <div>
+        <input type="text" v-model="q.aaa" onclick="hello()">
+    </div>
+    <div>
+        <input type="text" v-model="q.aaa" @keyup.enter="query">
+    </div>
+    <div>
+        <input type="text" v-model="q.bbb" v-on:click="add">
+    </div>
+</div>
+<script src="${request.contextPath}/static/js/user.js"></script>
+</body>
+</html>

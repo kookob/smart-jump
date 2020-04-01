@@ -1,0 +1,1 @@
+const welcome = 'hello world';

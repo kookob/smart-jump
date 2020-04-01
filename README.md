@@ -1,0 +1,1 @@
+This is the smart jump plugin demo code, not the source code.
