@@ -5,8 +5,16 @@
 # Smart Jump
 Smart Jump is a jetbrains ide plugin that navigate to anywhere you want.
 
+## Features
+* Jump java method to mybatis xml.
+* Jump mybatis xml to java method.
+* Jump html to js/css file.
+* Jump request url to RequestMapping(java).
+* Jump html event to js function.
+* Jump to ...
+
 ## Instructions
-Three ways to trigger a jump
+Three ways to trigger a jump:
 * Click the gutter icon on the left.
 * Right click the popup menu 'Smart Jump'.
 * Shortcut: Alt + J
@@ -18,7 +26,7 @@ Three ways to trigger a jump
 [smart-jump.jar](https://plugins.jetbrains.com/plugin/14053-smart-jump/versions "Download Plugin")  
 
 ## Price
-**Original Price**: `$10/year`  
+**Original Price**: `$1/month`  
 **Flash Sale**: `$1/year`
 
 ## 注意事项
