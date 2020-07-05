@@ -1,4 +1,4 @@
-package com.obroom.smartjump.module1.entity;
+package com.obroom.plugin.smartjump.module1.entity;
 
 public class UserEntity {
     private Integer id;

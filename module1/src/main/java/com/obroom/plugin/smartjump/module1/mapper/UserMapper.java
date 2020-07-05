@@ -1,6 +1,6 @@
-package com.obroom.smartjump.module1.mapper;
+package com.obroom.plugin.smartjump.module1.mapper;
 
-import com.obroom.smartjump.module1.entity.UserEntity;
+import com.obroom.plugin.smartjump.module1.entity.UserEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -12,4 +12,9 @@ public interface UserMapper {
     List<UserEntity> getUsers();
 
     UserEntity getById(Integer id);
+
+    int querySql(String name);
+
+    void batchInsert(List<UserEntity> userList);
 }
+

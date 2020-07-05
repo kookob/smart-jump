@@ -1,7 +1,7 @@
-package com.obroom.smartjump.module1.controller;
+package com.obroom.plugin.smartjump.module1.controller;
 
-import com.obroom.smartjump.module1.entity.UserEntity;
-import com.obroom.smartjump.module1.service.UserService;
+import com.obroom.plugin.smartjump.module1.entity.UserEntity;
+import com.obroom.plugin.smartjump.module1.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class UserController {
 
     @GetMapping("getUsers")
     public List<UserEntity> getUsers() {
-        logger.info("获取用户数据");
+        logger.info("get users");
         List<UserEntity> list = userService.getUsers();
         System.out.println(list.size());
         return list;
@@ -28,8 +28,15 @@ public class UserController {
 
     @GetMapping("getById")
     public UserEntity getById(Integer id) {
-        logger.info("获取用户数据");
+        logger.info("get user by id");
         UserEntity user = userService.getById(id);
         return user;
+    }
+
+    @GetMapping("batchInsert")
+    public String batchInsert() {
+        logger.info("batch insert user test");
+        userService.batchInsert();
+        return "success";
     }
 }

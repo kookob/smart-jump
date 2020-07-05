@@ -1,13 +1,13 @@
-package com.obroom.smartjump.module2;
+package com.obroom.plugin.smartjump.module1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Module2Application {
+public class Module1Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Module2Application.class, args);
+        SpringApplication.run(Module1Application.class, args);
     }
 
 }
