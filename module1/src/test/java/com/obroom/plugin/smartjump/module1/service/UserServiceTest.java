@@ -1,4 +1,4 @@
-package com.obroom.smartjump.module1.service;
+package com.obroom.plugin.smartjump.module1.service;
 
 import com.obroom.plugin.smartjump.module1.entity.UserEntity;
 import org.junit.jupiter.api.Test;
@@ -10,6 +10,7 @@ import org.springframework.util.Assert;
 
 import java.util.List;
 
+//@SpringBootConfiguration
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class UserServiceTest {
@@ -25,6 +26,13 @@ class UserServiceTest {
     @Test
     void getById() {
         UserEntity user = userService.getById(1);
+        UserEntity user2 = userService.getById(2);
         Assert.notNull(user, "user is null");
+    }
+
+    @Test
+    void querySql() {
+        userService.querySql("world");
+        Assert.notNull("user", "user is null");
     }
 }

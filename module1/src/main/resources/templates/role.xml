@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>User Info</title>
+    <title>信息表</title>
     <#include "/base.html"/>
     <#include "/role.xml"/>
     <link rel="stylesheet" href="${request.contextPath}/static/css/index.css?id=fdafds" type="text/css">
