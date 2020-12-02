@@ -36,7 +36,7 @@ public class UserController {
     @GetMapping("batchInsert")
     public String batchInsert() {
         logger.info("batch insert user test");
-        userService.batchInsert();
+        userService.batchInsert(null);
         return "success";
     }
 }

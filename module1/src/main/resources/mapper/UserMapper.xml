@@ -25,4 +25,10 @@
         </foreach>
     </insert>
 
+    <select id="selectDemo1" resultMap="user" parameterType="String">
+        <![CDATA[
+        select * from user where name = 'hello\nworld\n\n'
+        ]]>
+    </select>
+
 </mapper>

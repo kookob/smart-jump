@@ -15,6 +15,8 @@ public interface UserMapper {
 
     int querySql(String name);
 
+    UserEntity selectDemo1(String name);
+
     void batchInsert(List<UserEntity> userList);
 }
 

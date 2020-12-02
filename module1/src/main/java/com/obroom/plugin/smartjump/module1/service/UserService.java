@@ -1,5 +1,6 @@
 package com.obroom.plugin.smartjump.module1.service;
 
+
 import com.obroom.plugin.smartjump.module1.entity.UserEntity;
 
 import java.util.List;
@@ -12,5 +13,7 @@ public interface UserService {
 
     int querySql(String name);
 
-    void batchInsert();
+    UserEntity selectDemo1(String name);
+
+    void batchInsert(List<UserEntity> userList);
 }

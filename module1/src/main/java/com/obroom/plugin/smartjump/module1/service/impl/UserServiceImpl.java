@@ -30,8 +30,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void batchInsert() {
-        List<UserEntity> userList = new ArrayList<>();
+    public UserEntity selectDemo1(String name) {
+        return userMapper.selectDemo1(name);
+    }
+
+    @Override
+    public void batchInsert(List<UserEntity> userList) {
+        userList = new ArrayList<>();
         UserEntity user1 = new UserEntity();
         user1.setName("user1");
         user1.setAge(21);
