@@ -14,7 +14,6 @@ Smart Jump is a plugin that navigate to anywhere you want.
 * Vue event ➔ JS function
 * JS file ➔ Java Controller RequestMapping
 * Eggjs jump
-* Custom search engine
 * ...
 
 ## Instructions
@@ -32,7 +31,11 @@ Three ways to trigger a jump:
 ## Price
 `$5/year`
 
-## Plugins
+## 插件文档
+https://www.yuque.com/kookob/plugin  
+文档里面包含插件介绍，使用手册，购买流程，激活失败等说明。  
+
+## 其他插件
 * [MyBatis Log Plugin](https://plugins.jetbrains.com/plugin/13905-mybatis-log-plugin) 
 * [Smart Jump](https://plugins.jetbrains.com/plugin/14053-smart-jump) 
 * [Smart Search](https://plugins.jetbrains.com/plugin/14615-smart-search)
@@ -42,4 +45,3 @@ Three ways to trigger a jump:
 因为本人开发过程中接触的IDE，语言，框架都比较有限，所以目前只支持一些我知道的跳转场景，后续会根据用户反馈，逐渐支持更多的跳转场景。  
 希望大家能多多反馈和建议，等到场景足够多的时候，尽量开发成通用可配置的跳转。  
 该插件还处于早期开发阶段，使用过程中难免出现一些问题，如有遇到问题，麻烦帮忙反馈或提个issue。  
-**非正版IDE用户，请勿购买本插件！**。  
